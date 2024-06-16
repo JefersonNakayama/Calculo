@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="1. Explicação do Código1.1 Importação de Módulos:‘random’ para gerar números aleatórios;‘time’ para calcular o tempo de execução.
+1.2. Função ‘main’:S"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Jeferson Nakayama"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="MergeSort"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="1. Explicação do Código1.1 Importação de Módulos:‘random’ para gerar números aleatórios;‘time’ para calcular o tempo de execução.
+1.2. Função ‘main’:S"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Portifólio"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="https://jefersonnakayama.github.io/Tarefa_Calculoimg/cover.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="https://jefersonnakayama.github.io/Tarefa_Calculoimg/cover.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>MergeSort - Portifólio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/Tarefa_Calculo/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+    <link rel="icon" href="img/favicon.png"/>
+    
+
+<meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/Tarefa_Calculo/atom.xml" title="Portifólio" type="application/atom+xml">
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/Tarefa_Calculo/">Jeferson Nakayama</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/Tarefa_Calculo/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://youtube.com/@jefersonnakayama1422?si=LdfkBiVKjeK5HL_f">
+                            
+                                <i class="fa fa-youtube fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/JefersonNakayama">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://www.instagram.com/nakayama_js/?next=%2F">
+                            
+                                <i class="fa fa-instagram fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/Tarefa_Calculo/img/cover.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>MergeSort</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2024-06-16
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h2 id="1-Explicacao-do-Codigo"><a href="#1-Explicacao-do-Codigo" class="headerlink" title="1. Explicação do Código"></a>1. Explicação do Código</h2><h3 id="1-1-Importacao-de-Modulos"><a href="#1-1-Importacao-de-Modulos" class="headerlink" title="1.1 Importação de Módulos:"></a>1.1 Importação de Módulos:</h3><p>‘random’ para gerar números aleatórios;<br>‘time’ para calcular o tempo de execução.</p>
+<h3 id="1-2-Funcao-‘main’"><a href="#1-2-Funcao-‘main’" class="headerlink" title="1.2. Função ‘main’:"></a>1.2. Função ‘main’:</h3><p>Solicita ao usuário o tamanho do array;<br>Gera um array com valores aleatórios entre 0 e 1000;<br>Exibe o array original;<br>Calcula e exibe o tempo de execução do Merge Sort;<br>Exibe o array ordenado.</p>
+<h3 id="1-3-Funcao-merge-sort"><a href="#1-3-Funcao-merge-sort" class="headerlink" title="1.3. Função merge_sort:"></a>1.3. Função merge_sort:</h3><p>Esta função implementa o algoritmo Merge Sort, que é um algoritmo de ordenação recursivo;<br>Divisão: A lista é dividida em duas metades;<br>Conquista: Cada metade é ordenada recursivamente;<br>Combinação: As duas metades ordenadas são combinadas em uma lista ordenada única;<br>Durante a combinação, elementos das duas metades são comparados e mesclados na ordem correta.</p>
+<h2 id="2-Uso-Pratico-do-Codigo-em-Calculos"><a href="#2-Uso-Pratico-do-Codigo-em-Calculos" class="headerlink" title="2. Uso Prático do Código em Cálculos"></a>2. Uso Prático do Código em Cálculos</h2><p>Este código pode ser útil em diversas práticas de cálculo, principalmente em análise de algoritmos e eficiência computacional.</p>
+<h3 id="2-1-Analise-de-Algoritmos"><a href="#2-1-Analise-de-Algoritmos" class="headerlink" title="2.1. Análise de Algoritmos:"></a>2.1. Análise de Algoritmos:</h3><ul>
+<li>Complexidade Temporal: Merge Sort tem uma complexidade temporal de 𝑂(𝑛log⁡𝑛);</li>
+<li>Este código pode ser usado para demonstrar e analisar a eficiência de Merge Sort em comparação com outros algoritmos de ordenação, como Bubble Sort (𝑂(𝑛2)O(n 2 )) ou Quick Sort (𝑂(𝑛log𝑛)O(nlogn)em média);</li>
+<li>Comparação Prática: Ao variar o tamanho do array, você pode observar como o tempo de execução muda, ajudando a entender a teoria na prática.</li>
+</ul>
+<h3 id="2-2-Desempenho-de-Sistemas"><a href="#2-2-Desempenho-de-Sistemas" class="headerlink" title="2.2. Desempenho de Sistemas:"></a>2.2. Desempenho de Sistemas:</h3><ul>
+<li>Benchmarking: O código pode ser usado para avaliar o desempenho de diferentes sistemas (e.g., CPUs, ambientes de execução) ao ordenar grandes volumes de dados;</li>
+<li>Otimização: Analisar se modificações no código ou configurações do sistema podem melhorar o desempenho do algoritmo.</li>
+</ul>
+<h3 id="2-3-Aplicacoes-em-Big-Data"><a href="#2-3-Aplicacoes-em-Big-Data" class="headerlink" title="2.3 Aplicações em Big Data:"></a>2.3 Aplicações em Big Data:</h3><ul>
+<li>Preparação de Dados: Ordenar grandes conjuntos de dados é uma tarefa comum em análise de dados e machine learning. Merge Sort é adequado para ordenação de grandes volumes de dados, especialmente quando implementado em ambientes distribuídos;</li>
+<li>Estudos de Caso: Utilizando dados reais ou simulados, você pode demonstrar a eficiência de Merge Sort para preparar dados para outras operações analíticas.</li>
+</ul>
+<h2 id="3-Compreensao-de-Algoritmos-de-Ordenacao"><a href="#3-Compreensao-de-Algoritmos-de-Ordenacao" class="headerlink" title="3. Compreensão de Algoritmos de Ordenação"></a>3. Compreensão de Algoritmos de Ordenação</h2><ul>
+<li>Teoria vs. Prática: Entender como um algoritmo de ordenação funciona teoricamente e ver sua implementação prática ajuda a consolidar o conhecimento. Merge Sort é um excelente exemplo por sua eficiência e abordagem recursiva.</li>
+<li>Complexidade Computacional: A prática com o código mostra a diferença de complexidade temporal entre Merge Sort (𝑂(𝑛log𝑛)) e outros algoritmos como Bubble Sort (𝑂(𝑛2)O(n 2)). Isso é essencial para entender a importância de escolher o algoritmo certo para problemas de grande escala.</li>
+</ul>
+<h2 id="4-Analise-de-Desempenho"><a href="#4-Analise-de-Desempenho" class="headerlink" title="4. Análise de Desempenho"></a>4. Análise de Desempenho</h2><ul>
+<li>Benchmarking: Rodar o código para arrays de diferentes tamanhos permite entender como o desempenho de Merge Sort se comporta na prática. Isso pode incluir a medição do tempo de execução e o uso de recursos como memória.</li>
+<li>Eficiência em Diferentes Contextos: Comparar o desempenho em diferentes máquinas ou ambientes de execução (e.g., local vs. nuvem) ajuda a entender como o hardware e o ambiente afetam a eficiência dos algoritmos.</li>
+</ul>
+<h2 id="5-Aplicacao-em-Ciencia-de-Dados"><a href="#5-Aplicacao-em-Ciencia-de-Dados" class="headerlink" title="5. Aplicação em Ciência de Dados"></a>5. Aplicação em Ciência de Dados</h2><ul>
+<li>Preparação de Dados: Ordenação é uma etapa crucial em muitas tarefas de ciência de dados e aprendizado de máquina. Compreender a eficiência de Merge Sort em grandes conjuntos de dados pode ajudar na escolha de métodos para preparação e limpeza de dados.</li>
+<li>Manipulação de Dados em Tempo Real: Ver como Merge Sort lida com grandes volumes de dados pode ser diretamente aplicável a sistemas que precisam processar dados em tempo real ou quase real.</li>
+</ul>
+<h2 id="6-Exploracao-de-Estruturas-de-Dados-e-Algoritmos-Avancados"><a href="#6-Exploracao-de-Estruturas-de-Dados-e-Algoritmos-Avancados" class="headerlink" title="6. Exploração de Estruturas de Dados e Algoritmos Avançados"></a>6. Exploração de Estruturas de Dados e Algoritmos Avançados</h2><ul>
+<li>Estruturas de Dados Relacionadas: Estudar Merge Sort pode levar a explorar outras estruturas de dados e algoritmos relacionados, como árvores binárias, heaps e algoritmos de divisão e conquista.</li>
+<li>Recursividade e Divisão e Conquista: Merge Sort é um exemplo clássico de algoritmos recursivos e de divisão e conquista, fornecendo uma base sólida para entender outros algoritmos que usam técnicas semelhantes.</li>
+</ul>
+<h2 id="7-Visualizacao-de-Dados-e-Resultados"><a href="#7-Visualizacao-de-Dados-e-Resultados" class="headerlink" title="7.  Visualização de Dados e Resultados"></a>7.  Visualização de Dados e Resultados</h2><ul>
+<li>Plotagem e Análise de Resultados: Utilizar bibliotecas como Matplotlib para plotar gráficos de desempenho (tempo vs. tamanho do array) ajuda a visualizar a eficiência do algoritmo e a interpretar os resultados de forma mais intuitiva.</li>
+<li>Gráficos Log-Log: Entender gráficos log-log e sua importância na análise de complexidade de algoritmos fornece uma ferramenta poderosa para análise de desempenho.</li>
+</ul>
+<img src="/Tarefa_Calculo/2024/06/16/MergeSort/merge.png" class="">
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/JefersonNakayama" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/jeferson-shodi-nakayama-65559628b/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="mailto:nakayamajeff@edu.unifil.br" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2024 Jeferson Nakayama<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
