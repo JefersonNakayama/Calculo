@@ -13,8 +13,7 @@
     
 
     
-        <meta name="description" content="1. Explicação do Código1.1 Importação de Módulos:‘random’ para gerar números aleatórios;‘time’ para calcular o tempo de execução.
-1.2. Função ‘main’:S"/>
+        <meta name="description" content="Merge Sort1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950import randomimport timedef merge_sort(arr):    i"/>
     
 
     <!--Author-->
@@ -29,8 +28,7 @@
 
     <!--Open Graph Description-->
     
-        <meta property="og:description" content="1. Explicação do Código1.1 Importação de Módulos:‘random’ para gerar números aleatórios;‘time’ para calcular o tempo de execução.
-1.2. Função ‘main’:S"/>
+        <meta property="og:description" content="Merge Sort1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950import randomimport timedef merge_sort(arr):    i"/>
     
 
     <!--Open Graph Site Name-->
@@ -192,7 +190,8 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h2 id="1-Explicacao-do-Codigo"><a href="#1-Explicacao-do-Codigo" class="headerlink" title="1. Explicação do Código"></a>1. Explicação do Código</h2><h3 id="1-1-Importacao-de-Modulos"><a href="#1-1-Importacao-de-Modulos" class="headerlink" title="1.1 Importação de Módulos:"></a>1.1 Importação de Módulos:</h3><p>‘random’ para gerar números aleatórios;<br>‘time’ para calcular o tempo de execução.</p>
+                <h1 id="Merge-Sort"><a href="#Merge-Sort" class="headerlink" title="Merge Sort"></a>Merge Sort</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">import random</span><br><span class="line">import time</span><br><span class="line"></span><br><span class="line">def merge_sort(arr):</span><br><span class="line">    <span class="keyword">if</span> len(arr) &gt; 1:</span><br><span class="line">        mid = len(arr) // 2</span><br><span class="line">        L = arr[:mid]</span><br><span class="line">        R = arr[mid:]</span><br><span class="line"></span><br><span class="line">        merge_sort(L)</span><br><span class="line">        merge_sort(R)</span><br><span class="line"></span><br><span class="line">        i = j = k = 0</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> i &lt; len(L) and j &lt; len(R):</span><br><span class="line">            <span class="keyword">if</span> L[i] &lt; R[j]:</span><br><span class="line">                arr[k] = L[i]</span><br><span class="line">                i += 1</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                arr[k] = R[j]</span><br><span class="line">                j += 1</span><br><span class="line">            k += 1</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> i &lt; len(L):</span><br><span class="line">            arr[k] = L[i]</span><br><span class="line">            i += 1</span><br><span class="line">            k += 1</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> j &lt; len(R):</span><br><span class="line">            arr[k] = R[j]</span><br><span class="line">            j += 1</span><br><span class="line">            k += 1</span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    n = int(input(<span class="string">&quot;Digite o tamanho do array: &quot;</span>))</span><br><span class="line"></span><br><span class="line">    arr = [random.randint(0, 1000) <span class="keyword">for</span> _ <span class="keyword">in</span> range(n)]</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Array original:&quot;</span>, arr)</span><br><span class="line"></span><br><span class="line">    start_time = time.time()</span><br><span class="line">    merge_sort(arr)</span><br><span class="line">    end_time = time.time()</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Array ordenado:&quot;</span>, arr)</span><br><span class="line">    <span class="built_in">print</span>(f<span class="string">&quot;Tempo de execução: &#123;end_time - start_time:.6f&#125; segundos&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    main()</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="1-Explicacao-do-Codigo"><a href="#1-Explicacao-do-Codigo" class="headerlink" title="1. Explicação do Código"></a>1. Explicação do Código</h2><h3 id="1-1-Importacao-de-Modulos"><a href="#1-1-Importacao-de-Modulos" class="headerlink" title="1.1 Importação de Módulos:"></a>1.1 Importação de Módulos:</h3><p>‘random’ para gerar números aleatórios;<br>‘time’ para calcular o tempo de execução.</p>
 <h3 id="1-2-Funcao-‘main’"><a href="#1-2-Funcao-‘main’" class="headerlink" title="1.2. Função ‘main’:"></a>1.2. Função ‘main’:</h3><p>Solicita ao usuário o tamanho do array;<br>Gera um array com valores aleatórios entre 0 e 1000;<br>Exibe o array original;<br>Calcula e exibe o tempo de execução do Merge Sort;<br>Exibe o array ordenado.</p>
 <h3 id="1-3-Funcao-merge-sort"><a href="#1-3-Funcao-merge-sort" class="headerlink" title="1.3. Função merge_sort:"></a>1.3. Função merge_sort:</h3><p>Esta função implementa o algoritmo Merge Sort, que é um algoritmo de ordenação recursivo;<br>Divisão: A lista é dividida em duas metades;<br>Conquista: Cada metade é ordenada recursivamente;<br>Combinação: As duas metades ordenadas são combinadas em uma lista ordenada única;<br>Durante a combinação, elementos das duas metades são comparados e mesclados na ordem correta.</p>
 <h2 id="2-Uso-Pratico-do-Codigo-em-Calculos"><a href="#2-Uso-Pratico-do-Codigo-em-Calculos" class="headerlink" title="2. Uso Prático do Código em Cálculos"></a>2. Uso Prático do Código em Cálculos</h2><p>Este código pode ser útil em diversas práticas de cálculo, principalmente em análise de algoritmos e eficiência computacional.</p>
@@ -229,7 +228,33 @@
 <li>Plotagem e Análise de Resultados: Utilizar bibliotecas como Matplotlib para plotar gráficos de desempenho (tempo vs. tamanho do array) ajuda a visualizar a eficiência do algoritmo e a interpretar os resultados de forma mais intuitiva.</li>
 <li>Gráficos Log-Log: Entender gráficos log-log e sua importância na análise de complexidade de algoritmos fornece uma ferramenta poderosa para análise de desempenho.</li>
 </ul>
+<p>A tabela na imagem apresenta os tempos de execução do algoritmo Merge Sort para diferentes quantidades de dados (“Qtd. Dados”). Os dados foram obtidos através de experimentos práticos, executando o algoritmo em um computador e medindo o tempo necessário para ordenar cada conjunto de dados.</p>
 <img src="/Tarefa_Calculo/2024/06/16/MergeSort/merge.png" class="">
+<p>Clique <a target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1Dr9dI_5-JOhWOhHmyAupBB079QXvYXREuRlSswNGwN8/edit?usp=sharing">Aqui</a> !, para acessar os arquivos.</p>
+<p>O algoritmo Merge Sort é um algoritmo de ordenação eficiente e ele funciona da seguinte forma:</p>
+<ul>
+<li>Dividir: O conjunto de dados original é dividido em dois subconjuntos de tamanho aproximadamente igual.</li>
+</ul>
+<p>A etapa de combinação é realizada utilizando a técnica de busca binária. A busca binária é um algoritmo de busca eficiente que funciona da seguinte forma:</p>
+<ul>
+<li>Escolher um elemento central: Um elemento central é escolhido no subconjunto ordenado;</li>
+<li>Comparar o elemento central com a chave de busca: A chave de busca é comparada com o elemento central;</li>
+<li>Se a chave de busca for menor que o elemento central: A busca continua no subconjunto à esquerda do elemento central;</li>
+<li>Se a chave de busca for maior que o elemento central: A busca continua no subconjunto à direita do elemento central;</li>
+<li>Se a chave de busca for igual ao elemento central: A chave de busca foi encontrada.</li>
+</ul>
+<p>A tabela na imagem mostra o tempo de execução do algoritmo Merge Sort em segundos para diferentes quantidades de dados. Os dados indicam que o tempo de execução do algoritmo aumenta logaritmicamente com o número de dados. Isso significa que o tempo de execução do algoritmo cresce a um ritmo cada vez mais lento à medida que o número de dados aumenta.</p>
+<p>A relação entre o tempo de execução do algoritmo Merge Sort e o número de dados pode ser expressa pela seguinte equação:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">T(n) = O(n <span class="built_in">log</span> n)</span><br></pre></td></tr></table></figure>
+
+<p>Onde:</p>
+<ul>
+<li>T(n) é o tempo de execução do algoritmo para n dados;</li>
+<li>O(n log n) é a notação Big O, que indica que o tempo de execução do algoritmo cresce logaritmicamente com o número de dados.</li>
+<li>A notação Big O é uma maneira de expressar o tempo de execução assintótico de um algoritmo. O tempo de execução assintótico é o tempo de execução do algoritmo para grandes valores de n.</li>
+</ul>
+<h2 id="Consideracoes-Finais"><a href="#Consideracoes-Finais" class="headerlink" title="Considerações Finais"></a>Considerações Finais</h2><p>A obtenção dos dados na tabela do Merge Sort é feita através de experimentos práticos. Os dados indicam que o tempo de execução do algoritmo aumenta logaritmicamente com o número de dados. Isso significa que o Merge Sort é um algoritmo de ordenação eficiente que pode ser usado para ordenar grandes conjuntos de dados com um tempo de execução razoável.</p>
+
 
                 
             </div>

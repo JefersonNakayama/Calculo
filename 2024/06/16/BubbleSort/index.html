@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="Bubble Sort12345678910111213141516171819202122232425import randomimport timedef bubble_sort(arr):    n = len(arr)    for i in range(n):        for j i"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Jeferson Nakayama"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="BubbleSort"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Bubble Sort12345678910111213141516171819202122232425import randomimport timedef bubble_sort(arr):    n = len(arr)    for i in range(n):        for j i"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Portifólio"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="https://jefersonnakayama.github.io/Tarefa_Calculoimg/cover.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="https://jefersonnakayama.github.io/Tarefa_Calculoimg/cover.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>BubbleSort - Portifólio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/Tarefa_Calculo/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+    <link rel="icon" href="img/favicon.png"/>
+    
+
+<meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/Tarefa_Calculo/atom.xml" title="Portifólio" type="application/atom+xml">
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/Tarefa_Calculo/">Jeferson Nakayama</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/Tarefa_Calculo/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://youtube.com/@jefersonnakayama1422?si=LdfkBiVKjeK5HL_f">
+                            
+                                <i class="fa fa-youtube fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/JefersonNakayama">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://www.instagram.com/nakayama_js/?next=%2F">
+                            
+                                <i class="fa fa-instagram fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/Tarefa_Calculo/img/cover.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>BubbleSort</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2024-06-16
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="Bubble-Sort"><a href="#Bubble-Sort" class="headerlink" title="Bubble Sort"></a>Bubble Sort</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">import random</span><br><span class="line">import time</span><br><span class="line"></span><br><span class="line">def bubble_sort(arr):</span><br><span class="line">    n = len(arr)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(0, n-i-1):</span><br><span class="line">            <span class="keyword">if</span> arr[j] &gt; arr[j+1]:</span><br><span class="line">                arr[j], arr[j+1] = arr[j+1], arr[j]</span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    tamanho = int(input(<span class="string">&quot;Digite o tamanho do array: &quot;</span>))</span><br><span class="line">    array = [random.randint(1, 1000) <span class="keyword">for</span> _ <span class="keyword">in</span> range(tamanho)]</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Array original:&quot;</span>, array)</span><br><span class="line">    inicio = time.time()</span><br><span class="line">    bubble_sort(array)</span><br><span class="line">    fim = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Array ordenado:&quot;</span>, array)</span><br><span class="line">    tempo_execucao = fim - inicio</span><br><span class="line">    <span class="built_in">print</span>(f<span class="string">&quot;Tempo de execução: &#123;tempo_execucao:.9f&#125; segundos&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    main()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="1-Explicacao-do-Codigo"><a href="#1-Explicacao-do-Codigo" class="headerlink" title="1. Explicação do Código:"></a>1. Explicação do Código:</h2><h3 id="1-1-Importacoes-e-Funcao-Bubble-Sort"><a href="#1-1-Importacoes-e-Funcao-Bubble-Sort" class="headerlink" title="1.1 Importações e Função Bubble Sort:"></a>1.1 Importações e Função Bubble Sort:</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import random</span><br><span class="line">import time</span><br></pre></td></tr></table></figure>
+<ul>
+<li>random: Biblioteca para gerar números aleatórios.</li>
+<li>time: Biblioteca para medir o tempo de execução.<br>A função bubble_sort(arr) implementa o algoritmo de ordenação Bubble Sort. Este algoritmo compara pares de elementos adjacentes no array e os troca se estiverem na ordem errada. Esse processo é repetido várias vezes até que o array esteja ordenado.</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">def bubble_sort(arr):</span><br><span class="line">    n = len(arr)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(0, n-i-1):</span><br><span class="line">            <span class="keyword">if</span> arr[j] &gt; arr[j+1]:</span><br><span class="line">                arr[j], arr[j+1] = arr[j+1], arr[j]</span><br></pre></td></tr></table></figure>
+<ul>
+<li>n &#x3D; len(arr): Obtém o tamanho do array arr;</li>
+<li>Os loops for i in range(n) e for j in range(0, n-i-1) percorrem o array e comparam elementos adjacentes;</li>
+<li>Se um elemento é maior que o próximo (arr[j] &gt; arr[j+1]), eles são trocados.</li>
+</ul>
+<h3 id="1-2-Funcao-Principal-main"><a href="#1-2-Funcao-Principal-main" class="headerlink" title="1.2 Função Principal main():"></a>1.2 Função Principal main():</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def main():</span><br><span class="line">    tamanho = int(input(<span class="string">&quot;Digite o tamanho do array: &quot;</span>))</span><br><span class="line">    array = [random.randint(1, 1000) <span class="keyword">for</span> _ <span class="keyword">in</span> range(tamanho)]</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Array original:&quot;</span>, array)</span><br><span class="line">    inicio = time.time()</span><br><span class="line">    bubble_sort(array)</span><br><span class="line">    fim = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Array ordenado:&quot;</span>, array)</span><br><span class="line">    tempo_execucao = fim - inicio</span><br><span class="line">    <span class="built_in">print</span>(f<span class="string">&quot;Tempo de execução: &#123;tempo_execucao:.9f&#125; segundos&quot;</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>tamanho &#x3D; int(input(“Digite o tamanho do array: “)): Solicita ao usuário o tamanho desejado para o array;</li>
+<li>array &#x3D; [random.randint(1, 1000) for _ in range(tamanho)]: Gera um array de tamanho tamanho com valores inteiros aleatórios entre 1 e 1000;</li>
+<li>Imprime o array original;</li>
+<li>inicio &#x3D; time.time(): Marca o tempo antes de chamar bubble_sort;</li>
+<li>bubble_sort(array): Ordena o array utilizando o Bubble Sort;</li>
+<li>fim &#x3D; time.time(): Marca o tempo após a ordenação;</li>
+<li>Imprime o array ordenado;</li>
+<li>Calcula e imprime o tempo de execução da ordenação com precisão de 9 casas decimais.</li>
+</ul>
+<h2 id="2-Uso-em-Praticas-em-Calculo"><a href="#2-Uso-em-Praticas-em-Calculo" class="headerlink" title="2. Uso em Práticas em Cálculo:"></a>2. Uso em Práticas em Cálculo:</h2><p>Este código pode ser útil em práticas de cálculo em várias situações:</p>
+<h3 id="2-1-Analise-de-Desempenho-de-Algoritmos"><a href="#2-1-Analise-de-Desempenho-de-Algoritmos" class="headerlink" title="2.1 Análise de Desempenho de Algoritmos"></a>2.1 Análise de Desempenho de Algoritmos</h3><p>Medir o tempo de execução de algoritmos de ordenação como o Bubble Sort é fundamental para comparar sua eficiência com outros algoritmos (como o Merge Sort, Quick Sort, etc.) em diferentes conjuntos de dados.</p>
+<h3 id="2-2-Exercicios-de-Programacao"><a href="#2-2-Exercicios-de-Programacao" class="headerlink" title="2.2 Exercícios de Programação:"></a>2.2 Exercícios de Programação:</h3><p>Em cursos de cálculo computacional, alunos podem implementar e analisar algoritmos de ordenação para entender melhor conceitos como complexidade algorítmica, estruturas de dados e eficiência computacional.</p>
+<h3 id="2-3-Modelagem-Matematica"><a href="#2-3-Modelagem-Matematica" class="headerlink" title="2.3 Modelagem Matemática:"></a>2.3 Modelagem Matemática:</h3><p>Em aplicações práticas que envolvem grandes volumes de dados numéricos (por exemplo, na resolução de equações diferenciais, métodos numéricos para integração, etc.), é comum precisar ordenar conjuntos de dados para processamento eficiente.</p>
+<h3 id="2-4-Simulacoes-Cientificas"><a href="#2-4-Simulacoes-Cientificas" class="headerlink" title="2.4 Simulações Científicas:"></a>2.4 Simulações Científicas:</h3><p>Em simulações computacionais em ciências (como física, biologia, engenharia), algoritmos de ordenação são úteis para organizar e analisar grandes quantidades de dados gerados por modelos matemáticos.</p>
+<h2 id="3-Compreensao-da-Eficiencia-de-Algoritmos-de-Ordenacao"><a href="#3-Compreensao-da-Eficiencia-de-Algoritmos-de-Ordenacao" class="headerlink" title="3. Compreensão da Eficiência de Algoritmos de Ordenação"></a>3. Compreensão da Eficiência de Algoritmos de Ordenação</h2><p>O Bubble Sort é um dos algoritmos de ordenação mais simples, porém menos eficientes em termos de tempo de execução quando comparado a outros como o Merge Sort ou o Quick Sort. Utilizando este código podemos:</p>
+<h3 id="3-1-Comparar-Complexidade"><a href="#3-1-Comparar-Complexidade" class="headerlink" title="3.1 Comparar Complexidade"></a>3.1 Comparar Complexidade</h3><p>Implementar e analisar o Bubble Sort ajuda os alunos a entenderem como diferentes algoritmos de ordenação se comportam em termos de tempo de execução, especialmente à medida que o tamanho dos dados aumenta.</p>
+<h3 id="3-2-Discutir-Trade-offs"><a href="#3-2-Discutir-Trade-offs" class="headerlink" title="3.2 Discutir Trade-offs"></a>3.2 Discutir Trade-offs</h3><p>Discutir os trade-offs entre simplicidade de implementação e eficiência de tempo é fundamental para entender por que certos algoritmos são preferidos em aplicações práticas sobre outros.</p>
+<h2 id="4-Implementacao-e-Analise-de-Algoritmos"><a href="#4-Implementacao-e-Analise-de-Algoritmos" class="headerlink" title="4. Implementação e Análise de Algoritmos"></a>4. Implementação e Análise de Algoritmos</h2><p>Ao implementar o Bubble Sort e compará-lo com outros algoritmos, podemos:</p>
+<h3 id="4-1-Examinar-Limitacoes"><a href="#4-1-Examinar-Limitacoes" class="headerlink" title="4.1 Examinar Limitações"></a>4.1 Examinar Limitações</h3><p>O Bubble Sort é ineficiente para grandes conjuntos de dados. Isso leva os alunos a explorarem suas limitações e a refletirem sobre como essas limitações podem afetar a escolha do algoritmo em contextos práticos.</p>
+<h3 id="4-2-Analisar-Melhorias"><a href="#4-2-Analisar-Melhorias" class="headerlink" title="4.2 Analisar Melhorias"></a>4.2 Analisar Melhorias</h3><p>Discutir melhorias possíveis no Bubble Sort (como a otimização para parar quando o array estiver ordenado) pode levar a uma compreensão mais profunda das estratégias de otimização de algoritmos.</p>
+<h2 id="5-Aplicacoes-em-Metodos-Numericos-e-Modelagem-Matematica"><a href="#5-Aplicacoes-em-Metodos-Numericos-e-Modelagem-Matematica" class="headerlink" title="5. Aplicações em Métodos Numéricos e Modelagem Matemática"></a>5. Aplicações em Métodos Numéricos e Modelagem Matemática</h2><p>Em aplicações de métodos numéricos e modelagem matemática, onde a ordenação de dados é frequentemente necessária:</p>
+<h3 id="5-1-Integracao-com-Metodos-Numericos"><a href="#5-1-Integracao-com-Metodos-Numericos" class="headerlink" title="5.1 Integração com Métodos Numéricos"></a>5.1 Integração com Métodos Numéricos</h3><p>Entender como e quando ordenar dados pode ser crucial para a precisão e eficiência de métodos numéricos, como a resolução de equações diferenciais ou a integração numérica.</p>
+<h3 id="5-2-Simulacoes-Cientificas"><a href="#5-2-Simulacoes-Cientificas" class="headerlink" title="5.2 Simulações Científicas"></a>5.2 Simulações Científicas</h3><p>Em ciências naturais e engenharia, simulações computacionais frequentemente envolvem a ordenação de grandes volumes de dados gerados por modelos matemáticos. Conhecer e implementar algoritmos de ordenação ajuda a lidar com esses desafios de maneira eficiente.</p>
+<h2 id="6-Analise-de-Desempenho-e-Benchmarking"><a href="#6-Analise-de-Desempenho-e-Benchmarking" class="headerlink" title="6. Análise de Desempenho e Benchmarking"></a>6. Análise de Desempenho e Benchmarking</h2><p>Medição de Tempo: A medição precisa do tempo de execução (como feito no código fornecido) é essencial para comparar a eficiência de diferentes algoritmos. Isso prepara os alunos para a análise de desempenho em situações reais onde a eficiência computacional é crítica.</p>
+<h2 id="7-Desenvolvimento-de-Habilidades-de-Programacao-e-Depuracao"><a href="#7-Desenvolvimento-de-Habilidades-de-Programacao-e-Depuracao" class="headerlink" title="7. Desenvolvimento de Habilidades de Programação e Depuração"></a>7. Desenvolvimento de Habilidades de Programação e Depuração</h2><p>Implementação e Depuração: Implementar o Bubble Sort e resolver eventuais problemas que surjam durante a implementação (como erros de lógica ou eficiência) ajuda os alunos a desenvolverem habilidades valiosas de programação e depuração.</p>
+<p>A tabela na imagem apresenta os tempos de execução do algoritmo Bubble Sort para diferentes quantidades de dados. Os dados foram obtidos através de uma simulação computacional, onde o algoritmo foi executado várias vezes com cada quantidade de dados.</p>
+<img src="/Tarefa_Calculo/2024/06/16/BubbleSort/bubble.png" class="">
+<p>Clique <a target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1Dr9dI_5-JOhWOhHmyAupBB079QXvYXREuRlSswNGwN8/edit?usp=sharing">Aqui</a> para acessar a tabela!</p>
+<p>Para obter os dados da tabela, o algoritmo Bubble Sort foi executado várias vezes com cada quantidade de dados. O tempo de execução do algoritmo foi medido para cada execução e os resultados foram armazenados na tabela.</p>
+<h2 id="8-Analise-dos-Dados"><a href="#8-Analise-dos-Dados" class="headerlink" title="8. Análise dos Dados"></a>8. Análise dos Dados</h2><p>A tabela mostra que o tempo de execução do algoritmo Bubble Sort aumenta significativamente com o número de dados. Isso ocorre porque o algoritmo Bubble Sort é um algoritmo de ordenação quadrático.A busca binária pode ser utilizada para otimizar o algoritmo Bubble Sort. Ao utilizar a busca binária para encontrar o maior elemento da lista em cada iteração do algoritmo, o tempo de execução do algoritmo pode ser reduzido significativamente.</p>
+<h2 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h2><p>Os dados da tabela mostram que o tempo de execução do algoritmo Bubble Sort aumenta significativamente com o número de dados. Isso ocorre porque o algoritmo Bubble Sort é um algoritmo de ordenação quadrático. A busca binária pode ser utilizada para otimizar o algoritmo Bubble Sort e reduzir seu tempo de execução.</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/JefersonNakayama" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/jeferson-shodi-nakayama-65559628b/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="mailto:nakayamajeff@edu.unifil.br" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2024 Jeferson Nakayama<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
