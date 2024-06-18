@@ -3,11 +3,11 @@
   <title>Portifólio do Jef</title>
   
   
-  <link href="https://jefersonnakayama.github.io/Tarefa_Calculo/atom.xml" rel="self"/>
+  <link href="https://jefersonnakayama.github.io/atom.xml" rel="self"/>
   
-  <link href="https://jefersonnakayama.github.io/Tarefa_Calculo/"/>
+  <link href="https://jefersonnakayama.github.io/"/>
   <updated>2024-06-18T12:30:36.650Z</updated>
-  <id>https://jefersonnakayama.github.io/Tarefa_Calculo/</id>
+  <id>https://jefersonnakayama.github.io/</id>
   
   <author>
     <name>Jeferson Nakayama</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>SelectionSort</title>
-    <link href="https://jefersonnakayama.github.io/Tarefa_Calculo/2024/06/18/SelectionSort/"/>
-    <id>https://jefersonnakayama.github.io/Tarefa_Calculo/2024/06/18/SelectionSort/</id>
+    <link href="https://jefersonnakayama.github.io/2024/06/18/SelectionSort/"/>
+    <id>https://jefersonnakayama.github.io/2024/06/18/SelectionSort/</id>
     <published>2024-06-18T11:32:48.614Z</published>
     <updated>2024-06-18T12:30:36.650Z</updated>
     
@@ -38,8 +38,8 @@
   
   <entry>
     <title>MergeSort</title>
-    <link href="https://jefersonnakayama.github.io/Tarefa_Calculo/2024/06/18/MergeSort/"/>
-    <id>https://jefersonnakayama.github.io/Tarefa_Calculo/2024/06/18/MergeSort/</id>
+    <link href="https://jefersonnakayama.github.io/2024/06/18/MergeSort/"/>
+    <id>https://jefersonnakayama.github.io/2024/06/18/MergeSort/</id>
     <published>2024-06-18T11:32:48.612Z</published>
     <updated>2024-06-18T12:27:59.275Z</updated>
     
@@ -58,8 +58,8 @@
   
   <entry>
     <title>InsertionSort</title>
-    <link href="https://jefersonnakayama.github.io/Tarefa_Calculo/2024/06/18/InserctionSort/"/>
-    <id>https://jefersonnakayama.github.io/Tarefa_Calculo/2024/06/18/InserctionSort/</id>
+    <link href="https://jefersonnakayama.github.io/2024/06/18/InserctionSort/"/>
+    <id>https://jefersonnakayama.github.io/2024/06/18/InserctionSort/</id>
     <published>2024-06-18T11:32:48.611Z</published>
     <updated>2024-06-18T12:29:13.633Z</updated>
     
@@ -78,8 +78,8 @@
   
   <entry>
     <title>BubbleSort</title>
-    <link href="https://jefersonnakayama.github.io/Tarefa_Calculo/2024/06/18/BubbleSort/"/>
-    <id>https://jefersonnakayama.github.io/Tarefa_Calculo/2024/06/18/BubbleSort/</id>
+    <link href="https://jefersonnakayama.github.io/2024/06/18/BubbleSort/"/>
+    <id>https://jefersonnakayama.github.io/2024/06/18/BubbleSort/</id>
     <published>2024-06-18T11:32:48.609Z</published>
     <updated>2024-06-18T12:25:17.052Z</updated>
     
@@ -98,8 +98,8 @@
   
   <entry>
     <title>Tarefa de Calculo</title>
-    <link href="https://jefersonnakayama.github.io/Tarefa_Calculo/2024/05/11/Tarefas-de-Calculo/"/>
-    <id>https://jefersonnakayama.github.io/Tarefa_Calculo/2024/05/11/Tarefas-de-Calculo/</id>
+    <link href="https://jefersonnakayama.github.io/2024/05/11/Tarefas-de-Calculo/"/>
+    <id>https://jefersonnakayama.github.io/2024/05/11/Tarefas-de-Calculo/</id>
     <published>2024-05-11T19:30:16.000Z</published>
     <updated>2024-06-16T17:20:04.528Z</updated>
     
