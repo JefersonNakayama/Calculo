@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="Merge Sort1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950import randomimport timedef merge_sort(arr):    i"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Jeferson Nakayama"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="MergeSort"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Merge Sort1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950import randomimport timedef merge_sort(arr):    i"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Portifólio do Jef"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="https://jefersonnakayama.github.ioimg/photo.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="https://jefersonnakayama.github.ioimg/photo.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>MergeSort - Portifólio do Jef</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+    <link rel="icon" href="img/favicon.png"/>
+    
+
+<meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/atom.xml" title="Portifólio do Jef" type="application/atom+xml">
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Jeferson Nakayama</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://youtube.com/@jefersonnakayama1422?si=LdfkBiVKjeK5HL_f">
+                            
+                                <i class="fa fa-youtube fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/JefersonNakayama">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://www.instagram.com/nakayama_js/?next=%2F">
+                            
+                                <i class="fa fa-instagram fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/photo.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>MergeSort</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2024-06-18
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="Merge-Sort"><a href="#Merge-Sort" class="headerlink" title="Merge Sort"></a>Merge Sort</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">import random</span><br><span class="line">import time</span><br><span class="line"></span><br><span class="line">def merge_sort(arr):</span><br><span class="line">    <span class="keyword">if</span> len(arr) &gt; 1:</span><br><span class="line">        mid = len(arr) // 2</span><br><span class="line">        L = arr[:mid]</span><br><span class="line">        R = arr[mid:]</span><br><span class="line"></span><br><span class="line">        merge_sort(L)</span><br><span class="line">        merge_sort(R)</span><br><span class="line"></span><br><span class="line">        i = j = k = 0</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> i &lt; len(L) and j &lt; len(R):</span><br><span class="line">            <span class="keyword">if</span> L[i] &lt; R[j]:</span><br><span class="line">                arr[k] = L[i]</span><br><span class="line">                i += 1</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                arr[k] = R[j]</span><br><span class="line">                j += 1</span><br><span class="line">            k += 1</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> i &lt; len(L):</span><br><span class="line">            arr[k] = L[i]</span><br><span class="line">            i += 1</span><br><span class="line">            k += 1</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> j &lt; len(R):</span><br><span class="line">            arr[k] = R[j]</span><br><span class="line">            j += 1</span><br><span class="line">            k += 1</span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    n = int(input(<span class="string">&quot;Digite o tamanho do array: &quot;</span>))</span><br><span class="line"></span><br><span class="line">    arr = [random.randint(0, 1000) <span class="keyword">for</span> _ <span class="keyword">in</span> range(n)]</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Array original:&quot;</span>, arr)</span><br><span class="line"></span><br><span class="line">    start_time = time.time()</span><br><span class="line">    merge_sort(arr)</span><br><span class="line">    end_time = time.time()</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Array ordenado:&quot;</span>, arr)</span><br><span class="line">    <span class="built_in">print</span>(f<span class="string">&quot;Tempo de execução: &#123;end_time - start_time:.6f&#125; segundos&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    main()</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="1-Explicacao-do-Codigo"><a href="#1-Explicacao-do-Codigo" class="headerlink" title="1. Explicação do Código"></a>1. Explicação do Código</h2><h3 id="1-1-Importacao-de-Modulos"><a href="#1-1-Importacao-de-Modulos" class="headerlink" title="1.1 Importação de Módulos:"></a>1.1 Importação de Módulos:</h3><p>‘random’ para gerar números aleatórios;<br>‘time’ para calcular o tempo de execução.</p>
+<h3 id="1-2-Funcao-‘main’"><a href="#1-2-Funcao-‘main’" class="headerlink" title="1.2. Função ‘main’:"></a>1.2. Função ‘main’:</h3><p>Solicita ao usuário o tamanho do array;<br>Gera um array com valores aleatórios entre 0 e 1000;<br>Exibe o array original;<br>Calcula e exibe o tempo de execução do Merge Sort;<br>Exibe o array ordenado.</p>
+<h3 id="1-3-Funcao-merge-sort"><a href="#1-3-Funcao-merge-sort" class="headerlink" title="1.3. Função merge_sort:"></a>1.3. Função merge_sort:</h3><p>Esta função implementa o algoritmo Merge Sort, que é um algoritmo de ordenação recursivo;<br>Divisão: A lista é dividida em duas metades;<br>Conquista: Cada metade é ordenada recursivamente;<br>Combinação: As duas metades ordenadas são combinadas em uma lista ordenada única;<br>Durante a combinação, elementos das duas metades são comparados e mesclados na ordem correta.</p>
+<h2 id="2-Uso-Pratico-do-Codigo-em-Calculos"><a href="#2-Uso-Pratico-do-Codigo-em-Calculos" class="headerlink" title="2. Uso Prático do Código em Cálculos"></a>2. Uso Prático do Código em Cálculos</h2><p>Este código pode ser útil em diversas práticas de cálculo, principalmente em análise de algoritmos e eficiência computacional.</p>
+<h3 id="2-1-Analise-de-Algoritmos"><a href="#2-1-Analise-de-Algoritmos" class="headerlink" title="2.1. Análise de Algoritmos:"></a>2.1. Análise de Algoritmos:</h3><ul>
+<li>Complexidade Temporal: Merge Sort tem uma complexidade temporal de 𝑂(𝑛log⁡𝑛);</li>
+<li>Este código pode ser usado para demonstrar e analisar a eficiência de Merge Sort em comparação com outros algoritmos de ordenação, como Bubble Sort (𝑂(𝑛2)O(n 2 )) ou Quick Sort (𝑂(𝑛log𝑛)O(nlogn)em média);</li>
+<li>Comparação Prática: Ao variar o tamanho do array, você pode observar como o tempo de execução muda, ajudando a entender a teoria na prática.</li>
+</ul>
+<h3 id="2-2-Desempenho-de-Sistemas"><a href="#2-2-Desempenho-de-Sistemas" class="headerlink" title="2.2. Desempenho de Sistemas:"></a>2.2. Desempenho de Sistemas:</h3><ul>
+<li>Benchmarking: O código pode ser usado para avaliar o desempenho de diferentes sistemas (e.g., CPUs, ambientes de execução) ao ordenar grandes volumes de dados;</li>
+<li>Otimização: Analisar se modificações no código ou configurações do sistema podem melhorar o desempenho do algoritmo.</li>
+</ul>
+<h3 id="2-3-Aplicacoes-em-Big-Data"><a href="#2-3-Aplicacoes-em-Big-Data" class="headerlink" title="2.3 Aplicações em Big Data:"></a>2.3 Aplicações em Big Data:</h3><ul>
+<li>Preparação de Dados: Ordenar grandes conjuntos de dados é uma tarefa comum em análise de dados e machine learning. Merge Sort é adequado para ordenação de grandes volumes de dados, especialmente quando implementado em ambientes distribuídos;</li>
+<li>Estudos de Caso: Utilizando dados reais ou simulados, você pode demonstrar a eficiência de Merge Sort para preparar dados para outras operações analíticas.</li>
+</ul>
+<h2 id="3-Compreensao-de-Algoritmos-de-Ordenacao"><a href="#3-Compreensao-de-Algoritmos-de-Ordenacao" class="headerlink" title="3. Compreensão de Algoritmos de Ordenação"></a>3. Compreensão de Algoritmos de Ordenação</h2><ul>
+<li>Teoria vs. Prática: Entender como um algoritmo de ordenação funciona teoricamente e ver sua implementação prática ajuda a consolidar o conhecimento. Merge Sort é um excelente exemplo por sua eficiência e abordagem recursiva.</li>
+<li>Complexidade Computacional: A prática com o código mostra a diferença de complexidade temporal entre Merge Sort (𝑂(𝑛log𝑛)) e outros algoritmos como Bubble Sort (𝑂(𝑛2)O(n 2)). Isso é essencial para entender a importância de escolher o algoritmo certo para problemas de grande escala.</li>
+</ul>
+<h2 id="4-Analise-de-Desempenho"><a href="#4-Analise-de-Desempenho" class="headerlink" title="4. Análise de Desempenho"></a>4. Análise de Desempenho</h2><ul>
+<li>Benchmarking: Rodar o código para arrays de diferentes tamanhos permite entender como o desempenho de Merge Sort se comporta na prática. Isso pode incluir a medição do tempo de execução e o uso de recursos como memória.</li>
+<li>Eficiência em Diferentes Contextos: Comparar o desempenho em diferentes máquinas ou ambientes de execução (e.g., local vs. nuvem) ajuda a entender como o hardware e o ambiente afetam a eficiência dos algoritmos.</li>
+</ul>
+<h2 id="5-Aplicacao-em-Ciencia-de-Dados"><a href="#5-Aplicacao-em-Ciencia-de-Dados" class="headerlink" title="5. Aplicação em Ciência de Dados"></a>5. Aplicação em Ciência de Dados</h2><ul>
+<li>Preparação de Dados: Ordenação é uma etapa crucial em muitas tarefas de ciência de dados e aprendizado de máquina. Compreender a eficiência de Merge Sort em grandes conjuntos de dados pode ajudar na escolha de métodos para preparação e limpeza de dados.</li>
+<li>Manipulação de Dados em Tempo Real: Ver como Merge Sort lida com grandes volumes de dados pode ser diretamente aplicável a sistemas que precisam processar dados em tempo real ou quase real.</li>
+</ul>
+<h2 id="6-Exploracao-de-Estruturas-de-Dados-e-Algoritmos-Avancados"><a href="#6-Exploracao-de-Estruturas-de-Dados-e-Algoritmos-Avancados" class="headerlink" title="6. Exploração de Estruturas de Dados e Algoritmos Avançados"></a>6. Exploração de Estruturas de Dados e Algoritmos Avançados</h2><ul>
+<li>Estruturas de Dados Relacionadas: Estudar Merge Sort pode levar a explorar outras estruturas de dados e algoritmos relacionados, como árvores binárias, heaps e algoritmos de divisão e conquista.</li>
+<li>Recursividade e Divisão e Conquista: Merge Sort é um exemplo clássico de algoritmos recursivos e de divisão e conquista, fornecendo uma base sólida para entender outros algoritmos que usam técnicas semelhantes.</li>
+</ul>
+<h2 id="7-Visualizacao-de-Dados-e-Resultados"><a href="#7-Visualizacao-de-Dados-e-Resultados" class="headerlink" title="7.  Visualização de Dados e Resultados"></a>7.  Visualização de Dados e Resultados</h2><ul>
+<li>Plotagem e Análise de Resultados: Utilizar bibliotecas como Matplotlib para plotar gráficos de desempenho (tempo vs. tamanho do array) ajuda a visualizar a eficiência do algoritmo e a interpretar os resultados de forma mais intuitiva.</li>
+<li>Gráficos Log-Log: Entender gráficos log-log e sua importância na análise de complexidade de algoritmos fornece uma ferramenta poderosa para análise de desempenho.</li>
+</ul>
+<p>A tabela na imagem apresenta os tempos de execução do algoritmo Merge Sort para diferentes quantidades de dados (“Qtd. Dados”). Os dados foram obtidos através de experimentos práticos, executando o algoritmo em um computador e medindo o tempo necessário para ordenar cada conjunto de dados.</p>
+<img src="/2024/06/18/MergeSort/merge.png" class="">
+<p>Clique <a target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1Dr9dI_5-JOhWOhHmyAupBB079QXvYXREuRlSswNGwN8/edit?usp=sharing">Aqui</a> !, para acessar os arquivos.</p>
+<p>O algoritmo Merge Sort é um algoritmo de ordenação eficiente e ele funciona da seguinte forma:</p>
+<ul>
+<li>Dividir: O conjunto de dados original é dividido em dois subconjuntos de tamanho aproximadamente igual.</li>
+</ul>
+<p>A etapa de combinação é realizada utilizando a técnica de busca binária. A busca binária é um algoritmo de busca eficiente que funciona da seguinte forma:</p>
+<ul>
+<li>Escolher um elemento central: Um elemento central é escolhido no subconjunto ordenado;</li>
+<li>Comparar o elemento central com a chave de busca: A chave de busca é comparada com o elemento central;</li>
+<li>Se a chave de busca for menor que o elemento central: A busca continua no subconjunto à esquerda do elemento central;</li>
+<li>Se a chave de busca for maior que o elemento central: A busca continua no subconjunto à direita do elemento central;</li>
+<li>Se a chave de busca for igual ao elemento central: A chave de busca foi encontrada.</li>
+</ul>
+<p>A tabela na imagem mostra o tempo de execução do algoritmo Merge Sort em segundos para diferentes quantidades de dados. Os dados indicam que o tempo de execução do algoritmo aumenta logaritmicamente com o número de dados. Isso significa que o tempo de execução do algoritmo cresce a um ritmo cada vez mais lento à medida que o número de dados aumenta.</p>
+<p>A relação entre o tempo de execução do algoritmo Merge Sort e o número de dados pode ser expressa pela seguinte equação:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">T(n) = O(n <span class="built_in">log</span> n)</span><br></pre></td></tr></table></figure>
+
+<p>Onde:</p>
+<ul>
+<li>T(n) é o tempo de execução do algoritmo para n dados;</li>
+<li>O(n log n) é a notação Big O, que indica que o tempo de execução do algoritmo cresce logaritmicamente com o número de dados.</li>
+<li>A notação Big O é uma maneira de expressar o tempo de execução assintótico de um algoritmo. O tempo de execução assintótico é o tempo de execução do algoritmo para grandes valores de n.</li>
+</ul>
+<h2 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h2><p>A obtenção dos dados na tabela do Merge Sort é feita através de experimentos práticos. Os dados indicam que o tempo de execução do algoritmo aumenta logaritmicamente com o número de dados. Isso significa que o Merge Sort é um algoritmo de ordenação eficiente que pode ser usado para ordenar grandes conjuntos de dados com um tempo de execução razoável.</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/JefersonNakayama" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/jeferson-shodi-nakayama-65559628b/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="mailto:nakayamajeff@edu.unifil.br" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2024 Jeferson Nakayama<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="Selection Sort12345678910111213141516171819202122232425262728293031323334353637import randomimport timedef selection_sort(arr):    n = len(arr)    for"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Jeferson Nakayama"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="SelectionSort"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Selection Sort12345678910111213141516171819202122232425262728293031323334353637import randomimport timedef selection_sort(arr):    n = len(arr)    for"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Portifólio do Jef"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="https://jefersonnakayama.github.ioimg/photo.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="https://jefersonnakayama.github.ioimg/photo.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>SelectionSort - Portifólio do Jef</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+    <link rel="icon" href="img/favicon.png"/>
+    
+
+<meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/atom.xml" title="Portifólio do Jef" type="application/atom+xml">
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Jeferson Nakayama</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://youtube.com/@jefersonnakayama1422?si=LdfkBiVKjeK5HL_f">
+                            
+                                <i class="fa fa-youtube fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/JefersonNakayama">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://www.instagram.com/nakayama_js/?next=%2F">
+                            
+                                <i class="fa fa-instagram fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/photo.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>SelectionSort</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2024-06-18
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="Selection-Sort"><a href="#Selection-Sort" class="headerlink" title="Selection Sort"></a>Selection Sort</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">import random</span><br><span class="line">import time</span><br><span class="line"></span><br><span class="line">def selection_sort(arr):</span><br><span class="line">    n = len(arr)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        min_index = i</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(i + 1, n):</span><br><span class="line">            <span class="keyword">if</span> arr[j] &lt; arr[min_index]:</span><br><span class="line">                min_index = j</span><br><span class="line">        arr[i], arr[min_index] = arr[min_index], arr[i]</span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    <span class="keyword">while</span> True:</span><br><span class="line">        try:</span><br><span class="line">            size = int(input(<span class="string">&quot;Digite o tamanho do array: &quot;</span>))</span><br><span class="line">            <span class="keyword">if</span> size &gt; 0:</span><br><span class="line">                <span class="built_in">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&quot;Por favor, insira um número inteiro positivo.&quot;</span>)</span><br><span class="line">        except ValueError:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;Entrada inválida. Por favor, insira um número inteiro.&quot;</span>)</span><br><span class="line"></span><br><span class="line">    arr = [random.randint(1, 1000) <span class="keyword">for</span> _ <span class="keyword">in</span> range(size)]</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Array gerado:&quot;</span>, arr)</span><br><span class="line"></span><br><span class="line">    start_time = time.perf_counter()</span><br><span class="line">    selection_sort(arr)</span><br><span class="line">    end_time = time.perf_counter()</span><br><span class="line">    execution_time = end_time - start_time</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Array ordenado:&quot;</span>, arr)</span><br><span class="line">    <span class="built_in">print</span>(f<span class="string">&quot;Tempo de execução: &#123;execution_time:.9f&#125; segundos&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    main()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="Explicacao-do-Codigo"><a href="#Explicacao-do-Codigo" class="headerlink" title="Explicação do Código"></a>Explicação do Código</h1><h2 id="1-Importacoes-e-Definicao-de-Funcoes"><a href="#1-Importacoes-e-Definicao-de-Funcoes" class="headerlink" title="1. Importações e Definição de Funções"></a>1. Importações e Definição de Funções</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import random</span><br><span class="line">import time</span><br></pre></td></tr></table></figure>
+<p>Aqui, estamos importando dois módulos essenciais:</p>
+<ul>
+<li>random: Para gerar números aleatórios, útil para criar um array não ordenado.</li>
+<li>time: Para medir o tempo de execução do algoritmo de ordenação.</li>
+</ul>
+<p>Em seguida, definimos a função selection_sort(arr) que implementa o algoritmo de Selection Sort.</p>
+<h2 id="2-Funcao-‘selection-sort’"><a href="#2-Funcao-‘selection-sort’" class="headerlink" title="2. Função ‘selection_sort’"></a>2. Função ‘selection_sort’</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def selection_sort(arr):</span><br><span class="line">    n = len(arr)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(n):</span><br><span class="line">        min_index = i</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(i + 1, n):</span><br><span class="line">            <span class="keyword">if</span> arr[j] &lt; arr[min_index]:</span><br><span class="line">                min_index = j</span><br><span class="line">        arr[i], arr[min_index] = arr[min_index], arr[i]</span><br></pre></td></tr></table></figure>
+
+<p>Esta função recebe um array arr e ordena seus elementos em ordem crescente utilizando o algoritmo de Selection Sort. A ideia principal é iterar pelo array, encontrar o menor elemento não ordenado e trocá-lo com o elemento na posição atual (i).</p>
+<h2 id="3-Funcao-‘main’"><a href="#3-Funcao-‘main’" class="headerlink" title="3. Função ‘main’"></a>3. Função ‘main’</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">def main():</span><br><span class="line">    <span class="keyword">while</span> True:</span><br><span class="line">        try:</span><br><span class="line">            size = int(input(<span class="string">&quot;Digite o tamanho do array: &quot;</span>))</span><br><span class="line">            <span class="keyword">if</span> size &gt; 0:</span><br><span class="line">                <span class="built_in">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&quot;Por favor, insira um número inteiro positivo.&quot;</span>)</span><br><span class="line">        except ValueError:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;Entrada inválida. Por favor, insira um número inteiro.&quot;</span>)</span><br><span class="line"></span><br><span class="line">    arr = [random.randint(1, 1000) <span class="keyword">for</span> _ <span class="keyword">in</span> range(size)]</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Array gerado:&quot;</span>, arr)</span><br><span class="line"></span><br><span class="line">    start_time = time.perf_counter()</span><br><span class="line">    selection_sort(arr)</span><br><span class="line">    end_time = time.perf_counter()</span><br><span class="line">    execution_time = end_time - start_time</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Array ordenado:&quot;</span>, arr)</span><br><span class="line">    <span class="built_in">print</span>(f<span class="string">&quot;Tempo de execução: &#123;execution_time:.9f&#125; segundos&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>A função main() é onde a execução principal do programa ocorre:</p>
+<ul>
+<li>Solicita ao usuário o tamanho do array;</li>
+<li>Gera um array com números inteiros aleatórios entre 1 e 1000;</li>
+<li>Mede o tempo de execução da função selection_sort() utilizando time.perf_counter();</li>
+<li>Exibe o array original, o array ordenado e o tempo de execução da ordenação.</li>
+</ul>
+<h2 id="4-Execucao-do-Programa"><a href="#4-Execucao-do-Programa" class="headerlink" title="4. Execução do Programa"></a>4. Execução do Programa</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+
+<p>Esta parte do código verifica se o script está sendo executado diretamente (em oposição a ser importado como um módulo). Se for o caso, chama a função main() para iniciar a execução do programa.</p>
+<h2 id="5-Uso-em-Praticas-de-Calculo"><a href="#5-Uso-em-Praticas-de-Calculo" class="headerlink" title="5. Uso em Práticas de Cálculo"></a>5. Uso em Práticas de Cálculo</h2><p>O algoritmo de Selection Sort, embora simples, é útil em diversas práticas de cálculo e análise de algoritmos:</p>
+<ul>
+<li>Análise de Complexidade: O Selection Sort é um exemplo de um algoritmo de ordenação com complexidade O(n^2) no pior caso, o que o torna interessante para comparar com algoritmos mais eficientes, como Merge Sort ou Quick Sort;</li>
+<li>Ensino de Algoritmos: É frequentemente utilizado para ensinar conceitos fundamentais de algoritmos de ordenação, como iteração sobre arrays e troca de elementos;</li>
+<li>Aplicações em Pesquisa Operacional: Em problemas de otimização simples, onde o tamanho do conjunto de dados não é muito grande, o Selection Sort pode ser uma escolha viável;</li>
+<li>Testes de Performance: É útil para testar o desempenho de hardware ou ambientes de execução, devido à sua simplicidade e previsibilidade no tempo de execução;</li>
+</ul>
+<p>No entanto, em aplicações do mundo real onde a eficiência é crucial, como grandes volumes de dados ou sistemas críticos de tempo real, algoritmos como Merge Sort ou Quick Sort são preferíveis devido à sua complexidade assintótica inferior (O(n log n)).</p>
+<p>Em resumo, o código fornecido exemplifica um algoritmo simples de ordenação (Selection Sort) e demonstra como medir o tempo de execução em Python, sendo útil tanto para aprendizado e ensino quanto para aplicações práticas onde a eficiência não é a maior preocupação.</p>
+<p>A tabela na imagem apresenta os tempos de execução do algoritmo Selection Sort para diferentes quantidades de dados. O algoritmo Selection Sort é um algoritmo de ordenação simples e eficiente que funciona da seguinte maneira:</p>
+<img src="/2024/06/18/SelectionSort/selection.png" class="">
+<p>Clique <a target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1Dr9dI_5-JOhWOhHmyAupBB079QXvYXREuRlSswNGwN8/edit?usp=sharing">Aqui</a> para acessar a tabela!</p>
+<ul>
+<li>Selecione o menor elemento na lista não ordenada;</li>
+<li>Troque o menor elemento pelo primeiro elemento da lista não ordenada;</li>
+<li>Repita os passos 1 e 2 até que todos os elementos da lista estejam ordenados;</li>
+<li>A busca binária não é utilizada diretamente no algoritmo Selection Sort. No entanto, a tabela na imagem pode ser obtida usando uma combinação de Selection Sort e uma técnica de busca similar à busca binária;</li>
+</ul>
+<h2 id="6-Tecnica-de-busca-para-obter-os-dados-da-tabela"><a href="#6-Tecnica-de-busca-para-obter-os-dados-da-tabela" class="headerlink" title="6. Técnica de busca para obter os dados da tabela"></a>6. Técnica de busca para obter os dados da tabela</h2><ul>
+<li>Crie uma lista vazia para armazenar os tempos de execução.</li>
+<li>Ordene a lista de dados em ordem crescente usando o algoritmo Selection Sort.</li>
+</ul>
+<h4 id="6-1-Para-cada-quantidade-de-dados"><a href="#6-1-Para-cada-quantidade-de-dados" class="headerlink" title="6.1 Para cada quantidade de dados"></a>6.1 Para cada quantidade de dados</h4><ul>
+<li>Execute o algoritmo Selection Sort para a lista de dados ordenada;</li>
+<li>Meça o tempo de execução do algoritmo;</li>
+<li>Adicione o tempo de execução à lista vazia;</li>
+</ul>
+<h4 id="Repita-o-passo-3-para-todas-as-quantidades-de-dados-desejadas"><a href="#Repita-o-passo-3-para-todas-as-quantidades-de-dados-desejadas" class="headerlink" title="Repita o passo 3 para todas as quantidades de dados desejadas."></a>Repita o passo 3 para todas as quantidades de dados desejadas.</h4><h2 id="7-Explicacao-passo-a-passo"><a href="#7-Explicacao-passo-a-passo" class="headerlink" title="7.Explicação passo a passo"></a>7.Explicação passo a passo</h2><ul>
+<li>Criação da lista vazia: A lista vazia será usada para armazenar os tempos de execução do algoritmo Selection Sort para cada quantidade de dados;</li>
+<li>Ordenação da lista de dados: A lista de dados é ordenada em ordem crescente usando o algoritmo Selection Sort. Isso garante que os dados estejam em uma ordem específica, o que facilita a busca eficiente pelos tempos de execução;</li>
+<li>Execução do algoritmo e medição do tempo: Para cada quantidade de dados, o algoritmo Selection Sort é executado na lista de dados ordenada. O tempo de execução do algoritmo é medido e armazenado na lista vazia;</li>
+<li>Repetição: O passo 3 é repetido para todas as quantidades de dados desejadas. Isso garante que os tempos de execução sejam coletados para uma variedade de tamanhos de lista.</li>
+</ul>
+<p>A técnica de busca descrita acima não é uma busca binária clássica, mas utiliza uma ideia similar de busca eficiente para obter os tempos de execução do algoritmo Selection Sort.</p>
+<h2 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h2><p>A tabela na imagem apresenta os tempos de execução do algoritmo Selection Sort para diferentes quantidades de dados. A tabela pode ser obtida usando uma combinação de Selection Sort e uma técnica de busca similar à busca binária. A técnica de busca descrita permite obter os tempos de execução de maneira eficiente, mesmo para grandes quantidades de dados.</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/JefersonNakayama" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/jeferson-shodi-nakayama-65559628b/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="mailto:nakayamajeff@edu.unifil.br" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2024 Jeferson Nakayama<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

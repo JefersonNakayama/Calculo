@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="Insertion Sort12345678910111213141516171819202122232425262728import randomimport timedef insertion_sort(arr):    for i in range(1, len(arr)):        k"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Jeferson Nakayama"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="InsertionSort"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="Insertion Sort12345678910111213141516171819202122232425262728import randomimport timedef insertion_sort(arr):    for i in range(1, len(arr)):        k"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Portifólio do Jef"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="https://jefersonnakayama.github.ioimg/photo.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="https://jefersonnakayama.github.ioimg/photo.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>InsertionSort - Portifólio do Jef</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+    <link rel="icon" href="img/favicon.png"/>
+    
+
+<meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/atom.xml" title="Portifólio do Jef" type="application/atom+xml">
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Jeferson Nakayama</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://youtube.com/@jefersonnakayama1422?si=LdfkBiVKjeK5HL_f">
+                            
+                                <i class="fa fa-youtube fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/JefersonNakayama">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://www.instagram.com/nakayama_js/?next=%2F">
+                            
+                                <i class="fa fa-instagram fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/photo.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>InsertionSort</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2024-06-18
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="Insertion-Sort"><a href="#Insertion-Sort" class="headerlink" title="Insertion Sort"></a>Insertion Sort</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">import random</span><br><span class="line">import time</span><br><span class="line"></span><br><span class="line">def insertion_sort(arr):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(1, len(arr)):</span><br><span class="line">        key = arr[i]</span><br><span class="line">        j = i - 1</span><br><span class="line">        <span class="keyword">while</span> j &gt;= 0 and key &lt; arr[j]:</span><br><span class="line">            arr(j + 1) = arr[j]</span><br><span class="line">            j -= 1</span><br><span class="line">        arr(j + 1) = key</span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    try:</span><br><span class="line">        n = int(input(<span class="string">&quot;Digite o tamanho do array: &quot;</span>))</span><br><span class="line">        arr = [random.randint(0, 1000) <span class="keyword">for</span> _ <span class="keyword">in</span> range(n)]</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Array gerado:&quot;</span>, arr)</span><br><span class="line">        start_time = time.time()</span><br><span class="line">        insertion_sort(arr)</span><br><span class="line">        end_time = time.time()</span><br><span class="line">        execution_time = end_time - start_time</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Array ordenado:&quot;</span>, arr)</span><br><span class="line">        <span class="built_in">print</span>(f<span class="string">&quot;Tempo de execução: &#123;execution_time:.9f&#125; segundos&quot;</span>)</span><br><span class="line">    except ValueError:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Por favor, insira um número inteiro válido.&quot;</span>)</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    main()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="1-Explicacao-do-Codigo"><a href="#1-Explicacao-do-Codigo" class="headerlink" title="1. Explicação do Código"></a>1. Explicação do Código</h2><h3 id="1-1-Importacoes"><a href="#1-1-Importacoes" class="headerlink" title="1.1 Importações"></a>1.1 Importações</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import random</span><br><span class="line">import time</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>‘random’: Usado para gerar números aleatórios;</li>
+<li>‘time’: Usado para medir o tempo de execução.</li>
+</ul>
+<h3 id="1-2-Funcao-insertion-sort-arr"><a href="#1-2-Funcao-insertion-sort-arr" class="headerlink" title="1.2 Função insertion_sort(arr)"></a>1.2 Função insertion_sort(arr)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def insertion_sort(arr):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(1, len(arr)):</span><br><span class="line">        key = arr[i]</span><br><span class="line">        j = i - 1</span><br><span class="line">        <span class="keyword">while</span> j &gt;= 0 and key &lt; arr[j]:</span><br><span class="line">            arr[j + 1] = arr[j]</span><br><span class="line">            j -= 1</span><br><span class="line">        arr[j + 1] = key</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Implementa o algoritmo de Insertion Sort;</li>
+<li>Percorre o array começando do segundo elemento até o final;</li>
+<li>Para cada elemento, compara-o com os elementos anteriores e os desloca para a direita até encontrar a posição correta para o elemento atual (key).</li>
+</ul>
+<h3 id="1-3-Funcao-main"><a href="#1-3-Funcao-main" class="headerlink" title="1.3 Função main()"></a>1.3 Função main()</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">def main():</span><br><span class="line">    try:</span><br><span class="line">        n = int(input(<span class="string">&quot;Digite o tamanho do array: &quot;</span>))</span><br><span class="line">        arr = [random.randint(0, 1000) <span class="keyword">for</span> _ <span class="keyword">in</span> range(n)]</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Array gerado:&quot;</span>, arr)</span><br><span class="line">        </span><br><span class="line">        start_time = time.time()</span><br><span class="line">        insertion_sort(arr)</span><br><span class="line">        end_time = time.time()</span><br><span class="line">        </span><br><span class="line">        execution_time = end_time - start_time</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Array ordenado:&quot;</span>, arr)</span><br><span class="line">        <span class="built_in">print</span>(f<span class="string">&quot;Tempo de execução: &#123;execution_time:.9f&#125; segundos&quot;</span>)</span><br><span class="line">    </span><br><span class="line">    except ValueError:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Por favor, insira um número inteiro válido.&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Solicita ao usuário o tamanho do array;</li>
+<li>Gera um array de tamanho n com valores aleatórios entre 0 e 1000;</li>
+<li>Imprime o array gerado;</li>
+<li>Mede o tempo antes e depois da execução do insertion_sort para calcular o tempo de execução;</li>
+<li>Imprime o array ordenado e o tempo de execução;</li>
+<li>Captura exceções se o usuário não fornecer um número inteiro válido.</li>
+</ul>
+<h3 id="1-4-Chamada-da-funcao-main"><a href="#1-4-Chamada-da-funcao-main" class="headerlink" title="1.4 Chamada da função main()"></a>1.4 Chamada da função main()</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Garante que o script execute a função main() quando executado diretamente.</li>
+</ul>
+<h2 id="2-Uso-em-Praticas-de-Calculo"><a href="#2-Uso-em-Praticas-de-Calculo" class="headerlink" title="2. Uso em Práticas de Cálculo"></a>2. Uso em Práticas de Cálculo</h2><p>O código pode ser útil em várias práticas de cálculo, especialmente em contextos de ensino e aprendizado de algoritmos e complexidade de tempo:</p>
+<h3 id="2-1-Educacao-em-Algoritmos"><a href="#2-1-Educacao-em-Algoritmos" class="headerlink" title="2.1 Educação em Algoritmos"></a>2.1 Educação em Algoritmos</h3><ul>
+<li>Análise de Desempenho: Permite aos alunos observar como o tempo de execução do Insertion Sort varia com o tamanho do array. Isso pode ser usado para discutir a complexidade de tempo O(n²) do Insertion Sort;</li>
+<li>Comparação com Outros Algoritmos: Pode ser comparado com outros algoritmos de ordenação, como Quick Sort ou Merge Sort, para entender diferenças de desempenho.</li>
+</ul>
+<h3 id="2-2-Benchmarking"><a href="#2-2-Benchmarking" class="headerlink" title="2.2 Benchmarking"></a>2.2 Benchmarking</h3><ul>
+<li>Desempenho de Software: Pode ser usado para medir o desempenho de diferentes implementações de algoritmos de ordenação;</li>
+<li>Análise Empírica: Auxilia na coleta de dados empíricos sobre o tempo de execução real dos algoritmos, que pode ser usado para validar análises teóricas.</li>
+</ul>
+<h3 id="2-3-Simulacoes-e-Experimentos"><a href="#2-3-Simulacoes-e-Experimentos" class="headerlink" title="2.3 Simulações e Experimentos"></a>2.3 Simulações e Experimentos</h3><ul>
+<li>Experimentos com Dados Reais: Pode ser modificado para ordenar dados reais e medir o tempo de execução em cenários práticos;</li>
+<li>Estudo de Comportamento em Casos Específicos: Investigação de como o algoritmo se comporta com diferentes tipos de dados (por exemplo, dados quase ordenados, dados em ordem inversa, etc.).</li>
+</ul>
+<h2 id="3-Exemplo-de-Uso"><a href="#3-Exemplo-de-Uso" class="headerlink" title="3. Exemplo de Uso"></a>3. Exemplo de Uso</h2><p>Suponha que você deseja entender como o Insertion Sort se comporta com arrays de tamanhos diferentes. Você pode usar este script para gerar arrays de tamanhos variados e medir o tempo de execução para cada um, registrando os resultados para análise posterior. Isso pode fornecer insights sobre quando o Insertion Sort é eficiente e quando não é, ajudando na escolha do algoritmo de ordenação apropriado para diferentes aplicações.</p>
+<p>A tabela na imagem apresenta a relação entre a quantidade de dados (Qtd. Dados) e o tempo de execução (em segundos) do algoritmo Insertion Sort com busca binária. Para entendermos como esses dados foram obtidos, vamos analisar o funcionamento do algoritmo e sua relação com a busca binária.</p>
+<img src="/2024/06/18/InserctionSort/insertion.png" class="">
+<p>Clique <a target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1Dr9dI_5-JOhWOhHmyAupBB079QXvYXREuRlSswNGwN8/edit?usp=sharing">Aqui</a> para acessar as tabelas!</p>
+<p>O Insertion Sort é um algoritmo de ordenação que funciona da seguinte maneira:</p>
+<ul>
+<li>Inicialização: A lista a ser ordenada é considerada como parcialmente ordenada, com o primeiro elemento já na sua posição correta.</li>
+<li>Inserção: Para cada elemento subsequente da lista, ele é inserido na sua posição correta na parte já ordenada da lista. Isso é feito comparando o elemento com os elementos da parte ordenada e movendo os elementos necessários para abrir espaço para o novo elemento.</li>
+<li>Repetição: O processo de inserção é repetido para todos os elementos da lista até que todos estejam na sua posição correta.</li>
+</ul>
+<h2 id="4-Busca-binaria"><a href="#4-Busca-binaria" class="headerlink" title="4. Busca binária"></a>4. Busca binária</h2><p>A busca binária é um algoritmo de busca eficiente que funciona em listas ordenadas. Ele divide a lista em metades repetidamente até encontrar o elemento desejado ou determinar que ele não está na lista.</p>
+<h2 id="5-Insertion-Sort-com-busca-binaria"><a href="#5-Insertion-Sort-com-busca-binaria" class="headerlink" title="5. Insertion Sort com busca binária"></a>5. Insertion Sort com busca binária</h2><p>O Insertion Sort com busca binária combina os dois algoritmos para melhorar o desempenho do Insertion Sort em listas grandes. A busca binária é utilizada para encontrar a posição correta de inserção de cada elemento na lista ordenada, reduzindo o número de comparações necessárias em comparação com o Insertion Sort tradicional.</p>
+<h2 id="6-Obtendo-os-dados-da-tabela"><a href="#6-Obtendo-os-dados-da-tabela" class="headerlink" title="6. Obtendo os dados da tabela"></a>6. Obtendo os dados da tabela</h2><p>Para obter os dados da tabela, o algoritmo Insertion Sort com busca binária foi executado com diferentes quantidades de dados (Qtd. Dados). O tempo de execução do algoritmo para cada quantidade de dados foi medido e registrado na tabela.</p>
+<h2 id="7-Analise-dos-dados"><a href="#7-Analise-dos-dados" class="headerlink" title="7. Análise dos dados"></a>7. Análise dos dados</h2><p>A tabela mostra que o tempo de execução do algoritmo aumenta à medida que a quantidade de dados aumenta. Isso ocorre porque o algoritmo precisa realizar mais comparações e operações de inserção para ordenar listas maiores.</p>
+<p>A curva na tabela indica que o tempo de execução cresce exponencialmente com a quantidade de dados. Isso significa que o aumento do tempo de execução se torna cada vez mais significativo à medida que a quantidade de dados aumenta.</p>
+<h2 id="8-Fatores-que-influenciam-o-tempo-de-execucao"><a href="#8-Fatores-que-influenciam-o-tempo-de-execucao" class="headerlink" title="8. Fatores que influenciam o tempo de execução"></a>8. Fatores que influenciam o tempo de execução</h2><p>O tempo de execução do Insertion Sort com busca binária pode ser influenciado por alguns fatores, como:</p>
+<ul>
+<li>Tamanho da lista: Quanto maior a lista, mais tempo o algoritmo levará para ordená-la.<br>Distribuição dos dados: Se os dados estiverem distribuídos aleatoriamente, o algoritmo levará mais tempo para ordená-los do que se estiverem parcialmente ordenados.</li>
+<li>Implementação do algoritmo: A eficiência da implementação do algoritmo pode afetar o tempo de execução.</li>
+</ul>
+<h2 id="Conclusao"><a href="#Conclusao" class="headerlink" title="Conclusão"></a>Conclusão</h2><p>A tabela apresenta dados sobre o tempo de execução do algoritmo Insertion Sort com busca binária para diferentes quantidades de dados. A análise dos dados mostra que o tempo de execução do algoritmo aumenta exponencialmente com a quantidade de dados. O algoritmo pode ser influenciado por diversos fatores, como o tamanho da lista, a distribuição dos dados e a implementação do algoritmo.</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/JefersonNakayama" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://www.linkedin.com/in/jeferson-shodi-nakayama-65559628b/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="mailto:nakayamajeff@edu.unifil.br" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2024 Jeferson Nakayama<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
